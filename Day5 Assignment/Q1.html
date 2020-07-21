@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let value = prompt("Enter the positive elements of array or enter -1 to exit.")
+            var array =[]
+            while(value !=-1){
+                if(value>0){
+                    array.push(value)
+                }
+                value=prompt("Enter next value or -1 to exit")
+            }
+            let result=array.filter(e1=>e1%2!=0).map(e1=>e1**3);
+            console.log(result)
+            </Script>
+    </body>
+</html>
+                
